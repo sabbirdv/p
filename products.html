@@ -51,33 +51,112 @@
     </div>
 </div>
 
-<main class="w-full bg-green-100">
+<main class="w-full bg-green-100 py-12 px-5">
 
-    <div>
-        
+  <div class="w-full max-w-5xl mx-auto bg-white rounded-3xl shadow-sm p-6 flex flex-col md:flex-row gap-8">
+
+    <div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-xs">
+      <img src="image/monster-plant.jpg" alt="Monstera Deliciosa" class="w-full h-full object-cover">
     </div>
 
+    <div class="w-full md:w-1/2 flex flex-col gap-6">
+      <div>
+        <h2 class="text-3xl font-bold text-green-800 mb-2">Monstera Deliciosa</h2>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Monstera is a popular indoor plant. It has large green leaves and gives a fresh natural look to any room.
+        </p>
+      </div>
+
+      <div class="my-auto">
+        <div class="text-[30px] font-bold text-green-700">
+          Price: $25
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-gray-400 mb-2">Plant Size Options</h4>
+          <div class="tabs tabs-box w-fit bg-green-100">
+            <input type="radio" name="my_tabs_1" class="tab" aria-label="Small" />
+            <input type="radio" name="my_tabs_1" class="tab" aria-label="Medium" checked="checked" />
+            <input type="radio" name="my_tabs_1" class="tab" aria-label="Large" />
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 flex flex-col gap-4 mt-auto">
+        <h3 class="text-xl font-bold text-green-800">Add to Cart</h3>
+        <div class="flex flex-col gap-3 ">
+          <label class="flex items-center gap-3 cursor-pointer text-gray-500 font-medium text-sm">
+            <input type="checkbox" class="checkbox checkbox-success checkbox-sm " />
+            <span>Add plant pot</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer text-gray-500 font-medium text-sm">
+            <input type="checkbox" class="checkbox checkbox-success checkbox-sm " />
+            <span>Add plant stand</span>
+          </label>
+        </div>
+        <button type="button" class="w-full bg-green-700 text-white font-semibold py-3 rounded-lg cursor-pointer">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+  <div>
+    <div class="w-full max-w-5xl mx-auto bg-white rounded-3xl shadow-sm p-2 mt-8">
+      <h3 class="text-3xl font-bold text-green-700 pt-2 pb-4 text-center">Monstera Growth and Care Video</h3>
+      <div class="aspect-video w-full rounded-2xl overflow-hidden shadow-xs">
+        <iframe width="1479" height="832" src="https://www.youtube.com/embed/uqzSruCEC-c" title="HOUSEPLANT CARE TIPS  | HOW TO CARE FOR MONSTERA ADANSONII SWISS CHEESE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <h3 class="text-3xl font-bold w-full max-w-5xl mx-auto mb-5 mt-8 text-center">Plant Care Information</h3>
+  <div class="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+    <div class="bg-white rounded-2xl shadow-sm p-5">
+      <h4 class="text-xl font-bold text-gray-700 mb-4">Light</h4>
+      <p class="text-gray-600 text-sm">Bright indirect light is best.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, in.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-sm p-5">
+      <h4 class="text-xl font-bold text-gray-700 mb-4">Watering</h4>
+      <p class="text-gray-600 text-sm">Water when top soil is dry.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, in.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-sm p-5">
+      <h4 class="text-xl font-bold text-gray-700 mb-4">Toxicity</h4>
+      <p class="text-gray-600 text-sm">Not safe for pets if eaten.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, in.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-sm p-5">
+      <h4 class="text-xl font-bold text-gray-700 mb-4">Repotting</h4>
+      <p class="text-gray-600 text-sm">Repot once every 1 or 2 years.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, in.</p>
+    </div>
+  </div>
+ 
+  <h3 class="text-3xl font-bold  w-full max-w-5xl mx-auto mb-5 mt-8 text-center">Plant Parent Tips</h3>
+  <div class="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+      <img src="image/plant-4.jpg" alt="Tip Image" class="w-full h-48 object-cover">
+      <div class="p-5 flex-grow flex flex-col justify-between">
+        <p class="text-gray-600 text-sm leading-relaxed mb-3">My Monstera grows well near a window with soft sunlight.</p>
+        <p class="text-gray-400 text-xs font-semibold">- Sarah</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+      <img src="image/plant-7.jpg" alt="Tip Image" class="w-full h-48 object-cover">
+      <div class="p-5 flex-grow flex flex-col justify-between">
+        <p class="text-gray-600 text-sm leading-relaxed mb-3">I water my plant once a week and check the soil first.</p>
+        <p class="text-gray-400 text-xs font-semibold">- David</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+      <img src="image/plant-9.jpg" alt="Tip Image" class="w-full h-48 object-cover">
+      <div class="p-5 flex-grow flex flex-col justify-between">
+        <p class="text-gray-600 text-sm leading-relaxed mb-3">A simple moss pole helped my Monstera grow nicely.</p>
+        <p class="text-gray-400 text-xs font-semibold">- Marla</p>
+      </div>
+    </div>
+  </div>
 
 </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+<footer class="footer footer-horizontal footer-center bg-green-300 text-base-content rounded p-10">
   <nav class="grid grid-flow-col gap-4">
     <ul class="menu menu-horizontal px-1">
         <li><a href="index.html">Home</a></li>
