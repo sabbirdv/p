@@ -33,36 +33,32 @@ function plantMatch(){
 
 }
 
+function formValid(){
+    const userName = document.getElementById("userName").value;
+    const userEmail = document.getElementById("userEmail").value;
+    const userNumber = document.getElementById("userNumber").value;
+    const userMassage = document.getElementById("userMassage").value;
+    const userForm = document.getElementById("userForm");
+    const userAlert = document.getElementById("userAlert");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if(userName == "" || userName.length < 3 ){
+        userAlert.innerHTML = `Enter your Name!`
+        userAlert.classList = `text-red-500 text-center font-semibold`; 
+    }else if(userEmail == "" || userEmail.length < 6 || !userEmail.includes("@") || !userEmail.includes(".") ){
+        userAlert.innerHTML = `Enter your valid Email address!`
+        userAlert.classList = `text-red-500 text-center font-semibold`; 
+    }else if(userNumber == "" || userNumber.length < 11 || userNumber.length > 13 ){
+        userAlert.innerHTML = `Enter your valid Number!`
+        userAlert.classList = `text-red-500 text-center font-semibold`; 
+    }else if(userMassage == "" || userMassage.length < 10 ){
+        userAlert.innerHTML = `Type your Massage!`
+        userAlert.classList = `text-red-500 text-center font-semibold`; 
+    }else{
+        userAlert.textContent = `Form submit successfuly.`
+        userAlert.classList = `text-green-600 text-center font-semibold`;
+        userForm.reset()
+    }
+}
 
 
 setInterval(() => {
@@ -80,5 +76,6 @@ setInterval(() => {
   const date = new Date();
   showTime.innerText = `${date.toLocaleString("en-BD", longFormate)}`;
 }, 1000);
+
 fullYear = document.getElementById("fullYear").innerHTML = new Date().getFullYear();
 

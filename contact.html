@@ -1,132 +1,181 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-    <title>Plant Store</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<title>Plant Store</title>
+</head>
+
 <body>
 
-<div class="w-full bg-white/60 backdrop-blur-lg shadow-sm fixed">  
+  <div class="w-full bg-white/60 backdrop-blur-lg shadow-sm fixed">
     <div class="navbar w-full max-w-7xl mx-auto">
-    <div class="navbar-start">
+      <div class="navbar-start">
         <a class="btn btn-ghost text-3xl font-bold">Plant Store <span class="text-green-600">BD</span></a>
-    </div>
-    <div class="navbar-center hidden lg:flex">
+      </div>
+      <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="bg-green-100">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="px-5 py-2 bg-green-500 rounded-md font-semibold text-white">Login</a>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html" class="bg-green-100">Contact</a></li>
-        </ul>
-    </div>
-    <div class="navbar-end">
-        <a class="px-5 py-2 bg-green-500 rounded-md font-semibold text-white">Login</a>
-        <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-            </div>
-            <ul
-                tabindex="-1"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="bg-green-100">Contact</a></li>
-            </ul>
+          </ul>
         </div>
+      </div>
     </div>
-    </div>
-</div>
+  </div>
 
-<div class="w-full bg-linear-to-b from-green-400 to-green-100 pt-17.5">
+  <div class="w-full bg-linear-to-b from-green-400 to-green-100 pt-17.5">
     <div class=" w-full mx-auto max-w-150 text-center px-5 py-15">
-        <h2 class="text-5xl font-bold pb-5">Contact</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto nulla aperiam neque, sapiente animi?</p>
+      <h2 class="text-5xl font-bold pb-5">Contact Us</h2>
+      <p>Send us your question about plants and orders.</p>
     </div>
-</div>
+  </div>
 
-<main class="w-full bg-green-100">
+  <main class="w-full bg-green-100 py-12 px-5">
+    <div class="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+      <div class="flex flex-col gap-6">
+
+        <div class="p-6 bg-white rounded-2xl shadow-sm border border-green-50/50">
+          <div class="flex items-center gap-3 mb-3 text-green-700">
+            <i class="fa-solid fa-message text-2xl"></i>
+            <h3 class="text-xl font-bold">Live Chat</h3>
+          </div>
+          <p class="text-gray-600 text-sm mb-3">Chat with our Plant Specialist for expert care advice and help.</p>
+          <span
+            class="inline-flex items-center gap-2text-green-700 text-xs font-semibold">
+            Available 9 AM - 6 PM
+          </span>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-sm border border-green-50/50">
+          <div class="flex items-center gap-3 mb-3 text-green-700">
+            <i class="fas fa-envelope text-2xl"></i>
+            <h3 class="text-xl font-bold">Email Us</h3>
+          </div>
+          <p class="text-gray-600 text-sm mb-3">For general inquiries, orders, and support questions.</p>
+          <a href="mailto:support@bloomingoasis.com"
+            class="text-green-600 font-semibold text-sm">support@bloomingoasis.com</a>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-sm border border-green-50/50">
+          <h3 class="text-xl font-bold text-green-700 mb-2">Follow Us</h3>
+          <p class="text-gray-600 text-sm mb-4">Follow us for plant care tips, updates, and sneak peeks.</p>
+          <div class="flex flex-col gap-2">
+            <a href="#"
+              class="flex items-center gap-3 px-4 py-2.5 bg-green-50/50 border border-green-200 rounded-lg text-gray-700 text-sm font-medium">
+              <i class="fab fa-facebook text-blue-600 text-lg"></i>
+              Facebook
+            </a>
+            <a href="#"
+              class="flex items-center gap-3 px-4 py-2.5 bg-green-50/50 border border-green-200 rounded-lg text-gray-700 text-sm font-medium">
+              <i class="fab fa-instagram text-pink-600 text-lg"></i>
+              Instagram
+            </a>
+            <a href="#"
+              class="flex items-center gap-3 px-4 py-2.5 bg-green-50/50 border border-green-200 rounded-lg text-gray-700 text-sm font-medium">
+              <i class="fab fa-youtube text-red-600 text-lg"></i>
+              YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <form action="" id="userForm" class="rounded-lg shadow-md p-6 bg-white flex flex-col gap-4 w-full col-span-2">
+        <div>
+          <h4 class=" text-3xl font-semibold pb-2">Massage us</h4>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="userName">Name<span class="text-red-600">*</span></label>
+          <input type="text" placeholder="Jhon Dao" id="userName" class="p-3 rounded-md border-gray-300 ">
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="userEmail">Email<span class="text-red-600">*</span></label>
+          <input type="email" placeholder="example@gmail.com" id="userEmail" class="p-3 rounded-md border-gray-300 ">
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="userNumber">Number<span class="text-red-600">*</span></label>
+          <input type="number" placeholder="+880 1xxxxxxxxx" id="userNumber" class="p-3 rounded-md border-gray-300 ">
+        </div>
+        <div class="flex flex-col gap-2 flex-grow">
+          <label for="userMassage">Massage<span class="text-red-600">*</span></label>
+          <textarea id="userMassage" class="p-3 rounded-md border-gray-300 flex-grow resize-col"
+            placeholder="Type your massage..."></textarea>
+        </div>
+        <button type="button" onclick="formValid()"
+          class="bg-green-600 text-white font-semibold py-3 rounded-lg cursor-pointer">Submit</button>
+        <p id="userAlert"></p>
+      </form>
 
 
+    </div>
+  </main>
 
-
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
-  <nav class="grid grid-flow-col gap-4">
-    <ul class="menu menu-horizontal px-1">
+  <footer class="footer footer-horizontal footer-center bg-green-300 text-base-content rounded p-10">
+    <nav class="grid grid-flow-col gap-4">
+      <ul class="menu menu-horizontal px-1">
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <nav>
-    <div class="grid grid-flow-col gap-4">
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-        </svg>
-      </a>
-    </div>
-  </nav>
-  <aside>
-    <p>Copyright © <span id="fullYear"></span> - All right reserved by Plant Store BD</p>
-    <p>Current Date and Time: <span id="showTim"></span></p>
-  </aside>
-</footer>
+      </ul>
+    </nav>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <aside>
+      <p>Copyright © <span id="fullYear"></span> - All right reserved by Plant Store BD</p>
+      <p>Current Date and Time: <span id="showTim"></span></p>
+    </aside>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
